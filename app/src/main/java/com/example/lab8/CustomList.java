@@ -54,13 +54,14 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
-    public Boolean hasCity(City city){
-        for(City c: cities){
-            if(c.getCityName() == city.getCityName() && c.getProvinceName() == city.getProvinceName()){
+    public Boolean hasCity(City city) {
+        for (City c : cities) {
+            if (c.getCityName().equals(city.getCityName()) && c.getProvinceName().equals(city.getProvinceName())) {
                 return true;
             }
         }
         return false;
     }
+
 
 }
